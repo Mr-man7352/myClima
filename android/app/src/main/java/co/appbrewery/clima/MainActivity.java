@@ -1,4 +1,4 @@
-package co.appbrewery.clima;
+package in.macstak.clima;
 
 import io.flutter.embedding.android.FlutterActivity;
 
