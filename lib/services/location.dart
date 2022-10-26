@@ -35,3 +35,8 @@ class Location {
     }
   }
 }
+
+
+    // double temprature = data['main']['temp'];
+    // int condition = data['weather'][0]['id'];
+    // String cityName = data['name'];
