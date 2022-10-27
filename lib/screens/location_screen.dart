@@ -100,7 +100,9 @@ class _LocationScreenState extends State<LocationScreen> {
                       style: kTempTextStyle,
                     ),
                     Text(
-                      weatherIcon.isNotEmpty ? weatherIcon : '',
+                      weatherIcon != null && weatherIcon.isNotEmpty
+                          ? weatherIcon
+                          : '',
                       style: kConditionTextStyle,
                     ),
                   ],
@@ -109,7 +111,7 @@ class _LocationScreenState extends State<LocationScreen> {
               Padding(
                 padding: EdgeInsets.only(right: 15.0),
                 child: Text(
-                  weatherMessage.isNotEmpty
+                  weatherMessage != null && weatherMessage.isNotEmpty
                       ? "$weatherMessage in $cityName!"
                       : "It's 🍦 time in San Francisco!",
                   textAlign: TextAlign.right,
